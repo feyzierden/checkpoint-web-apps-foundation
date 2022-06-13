@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkpoint: Password Check</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Password Check</h1>
+    <main>
+      <div>
+        <form onsubmit="return false">
+          <input type="password" id="pw1" />
+          <input type="password" id="pw2" />
+          <button id="btnPassword">Show Passwords</button>
+        </form>
+      </div>
+
+      <div class="pwCheck">
+        <p>Passwords are equal <span id="elEqual">❌</span></p>
+        <p>Lower Case Letters <span id="elLowerCase">❌</span></p>
+        <p>Upper Case Letters <span id="elUpperCase">❌</span></p>
+        <p>Contains Numbers <span id="elNumbers">❌</span></p>
+        <p>At least 10 charachters long <span id="elTenChar">❌</span></p>
+
+        <button id="btnSavePw">Save Password</button>
+      </div>
+    </main>
+    <script src="script_refactored.js"></script>
+  </body>
+</html>

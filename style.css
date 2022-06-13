@@ -1,0 +1,70 @@
+body {
+  box-sizing: border-box;
+  background-color: lightsalmon;
+}
+
+h1 {
+  font-family: "Lobster";
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 3px 3px black;
+}
+
+main {
+  max-width: 550px;
+  margin-left: 150px;
+}
+
+form {
+  padding: 30px;
+}
+
+input {
+  border: 3px solid black;
+  height: 30px;
+  width: 250px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 2px;
+}
+
+.pwCheck {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 350px;
+  display: inline-block;
+  text-align: center;
+}
+
+#btnPassword {
+  background-color: black;
+  margin-top: 5px;
+  width: 260px;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+}
+
+#btnSavePw {
+  margin-top: 15px;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 699px;
+    margin: 0 auto;
+    column-gap: 2rem;
+  }
+
+  form {
+    padding: 30px;
+    _width: 450px;
+    column-gap: 2rem;
+  }
+}
